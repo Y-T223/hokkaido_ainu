@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>国立アイヌ民族博物館｜白老・ウポポイ</title>
+<meta name="description" content="アイヌ民族自身の視点で語る、日本初の国立アイヌ文化博物館。北海道白老町の民族共生象徴空間(ウポポイ)内。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --indigo:#14213A; --ink:#0D1526; --paper:#ECE6D6; --bone:#F6F2E8; --gold:#B8975A; --madder:#8A3A30;
+  --text:#EDE8DA; --muted:#B9B7AE; --dark-text:#1E2433;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--indigo);color:var(--text);font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;font-size:16px;line-height:1.9;overflow-x:hidden}
+h1,h2,h3{font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:700;line-height:1.5;margin:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 max(22px,env(safe-area-inset-left,0px)) 0 max(22px,env(safe-area-inset-right,0px))}
+section{padding:68px 0}
+h2{font-size:clamp(1.45rem,6vw,1.9rem);text-align:center;margin-bottom:12px;letter-spacing:.08em}
+.rule{width:64px;height:7px;margin:0 auto 34px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.light{background:var(--paper);color:var(--dark-text)}
+.light .rule{border-color:var(--madder)}
+
+/* hero */
+.hero{position:relative;min-height:88svh;display:flex;align-items:flex-end;background:var(--ink) center/cover no-repeat url("images/1.jpg");padding:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,21,38,.25) 0%,rgba(13,21,38,.55) 50%,rgba(13,21,38,.96) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:56px;padding-top:120px}
+.hero p.kicker{margin:0 0 14px;color:var(--gold);letter-spacing:.2em;font-size:.9rem}
+.hero h1{font-size:clamp(2rem,9.5vw,3.4rem);letter-spacing:.1em;text-shadow:0 2px 18px rgba(0,0,0,.5)}
+.hero p.lead{margin:18px 0 0;max-width:30em}
+.frame{border:1px solid var(--gold);padding:7px;background:rgba(0,0,0,.15)}
+.frame img{width:100%;height:auto;filter:sepia(.18) saturate(.92)}
+
+/* history */
+.tl{list-style:none;margin:30px 0 0;padding:0 0 0 22px;border-left:1px solid var(--madder)}
+.tl li{position:relative;padding:0 0 22px 18px}
+.tl li::before{content:"";position:absolute;left:-27px;top:.7em;width:9px;height:9px;background:var(--madder);transform:rotate(45deg)}
+.tl b{font-family:"Shippori Mincho B1",serif;font-size:1.1rem;display:block;color:var(--madder)}
+.light p{margin:0 0 1em}
+
+/* themes */
+.themes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:30px 0 0;padding:0;list-style:none}
+.themes li{border:1px solid rgba(184,151,90,.6);padding:18px 10px;text-align:center;font-family:"Shippori Mincho B1",serif;font-size:1.1rem;letter-spacing:.12em;background:rgba(255,255,255,.03)}
+.center{text-align:center}
+.lead2{max-width:34em;margin:0 auto 26px}
+
+/* strengths */
+.points{margin:34px 0 0;padding:0;list-style:none;display:grid;gap:16px}
+.points li{padding:4px 0 4px 18px;border-left:3px solid var(--gold)}
+.points h3{font-size:1.08rem;margin-bottom:4px;color:var(--gold)}
+.points p{margin:0;color:var(--text)}
+
+/* reviews */
+.rv{background:var(--bone);border:1px solid #cdbf9c;padding:24px 22px;margin:0 0 20px;position:relative}
+.rv .st{color:var(--madder);letter-spacing:.2em;font-size:1.05rem}
+.rv p{margin:8px 0 0;white-space:pre-line}
+
+/* info */
+dl{margin:0;border-top:1px solid var(--gold)}
+.row{display:grid;grid-template-columns:6.5em 1fr;gap:12px;padding:16px 0;border-bottom:1px solid rgba(184,151,90,.5)}
+dt{font-family:"Shippori Mincho B1",serif;color:var(--gold)}
+dd{margin:0;overflow-wrap:anywhere}
+.small{font-size:.92rem;color:var(--muted)}
+.map{margin-top:34px;border:1px solid var(--gold);padding:7px}
+.map iframe{display:block;width:100%;height:320px;border:0}
+.btns{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.btn{display:block;text-align:center;padding:16px 18px;min-height:52px;text-decoration:none;border:1px solid var(--gold);letter-spacing:.1em;font-weight:500}
+.btn.main{background:var(--gold);color:var(--ink)}
+.btn:focus-visible,.sns a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.sns{display:flex;justify-content:center;gap:16px;margin-top:30px}
+.sns a{width:52px;height:52px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center}
+.sns svg{width:24px;height:24px;fill:var(--gold)}
+footer{padding:36px 0 48px;text-align:center;font-size:.85rem;color:var(--muted);background:var(--ink)}
+@media (min-width:640px){.btns{flex-direction:row}.btn{flex:1}.points{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero" role="img" aria-label="国立アイヌ民族博物館の外観">
+  <div class="wrap">
+    <p class="kicker">北海道白老町　民族共生象徴空間 ウポポイ</p>
+    <h1>国立アイヌ民族博物館</h1>
+    <p class="lead">アイヌ民族自身の視点で語る、日本初の国立アイヌ文化博物館。約3万年前から現代へ続く物語に出会う場所です。</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>はじまりの物語</h2><div class="rule"></div>
+    <div class="light" style="padding:26px 22px">
+      <p>2020年7月、北海道白老町の民族共生象徴空間内に開館した日本初の国立アイヌ文化博物館。アイヌ文化の復興と継承、そして国内外への理解を目的に設立されました。</p>
+      <ul class="tl">
+        <li><b>1972年</b>萱野茂が資料を収集し「二風谷アイヌ文化資料館」を開館</li>
+        <li><b>1997年</b>アイヌ文化振興法</li>
+        <li><b>2007年</b>国連先住民族権利宣言</li>
+        <li><b>2012年</b>民族共生象徴空間の構想が始動</li>
+        <li><b>2019年</b>アイヌ施策推進法の施行</li>
+        <li style="padding-bottom:0"><b>2020年7月</b>国立アイヌ民族博物館 開館</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--ink)">
+  <div class="wrap">
+    <h2>6つのテーマ展示</h2><div class="rule"></div>
+    <p class="center lead2">ことば、世界観、くらし、歴史、しごと、交流。アイヌ民族自身の視点から、約3万年前から現代までを、アイヌ語パネルや音声ガイドとともにたどります。</p>
+    <figure class="frame" style="margin:0"><img src="images/2.jpg" alt="アイヌの伝統的な衣服と工芸品の展示" width="1200" height="800" loading="lazy"></figure>
+    <ul class="themes">
+      <li>ことば</li><li>世界観</li><li>くらし</li><li>歴史</li><li>しごと</li><li>交流</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>この博物館の魅力</h2><div class="rule"></div>
+    <figure class="frame" style="margin:0"><img src="images/3.jpg" alt="静かに展示を見つめる来館者の後ろ姿" width="1200" height="800" loading="lazy"></figure>
+    <ul class="points">
+      <li><h3>多角的な展示</h3><p>充実の常設展示室と特別展示室で、工芸品や衣装、言語、生活習慣の復元を最新の展示技術で紹介します。</p></li>
+      <li><h3>自然と調和する空間</h3><p>民族共生象徴空間内にあり、周囲の自然環境やアイヌの精神文化と調和した設計です。</p></li>
+      <li><h3>学びと研究</h3><p>教育普及活動や調査研究も活発に行い、アイヌ民族の尊厳を尊重しながら多様性への理解を広げています。</p></li>
+      <li><h3>文化交流の拠点</h3><p>地域の方々や国内外の来館者から高く評価されています。</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <h2>ご来館者の声</h2><div class="rule"></div>
+    <div class="rv"><div class="st" aria-label="5段階中4">★★★★☆</div>
+      <p>アイヌ民族の歴史や文化を改めて認識し体感できる貴重な設備です。20年ぶりの北海道旅行で一番訪ねたい場所でした。あいにくの雨模様でしたが、また今度訪れる時には周辺の湖畔や自然まで含めて時間をかけ理解したいと思います。</p></div>
+    <div class="rv"><div class="st" aria-label="5段階中5">★★★★★</div>
+      <p>北海道の先住民であるアイヌ、その固有の文化を扱った専門の博物館。北海道内にはアイヌに関する博物館は複数あるが、おそらくここが最大のものだろう。
+
+展示物はアイヌの風俗を物語る衣食住から狩猟採集、宗教に至るまで多様な事物に及び、とても面白い。解説も分かりやすく、mini theatreなどもあって何時間眺めていても飽きが来ない。
+
+考古学的なものから現代に生きるアイヌの方々に取材した映像までとてもすばらしい博物館だった。アイヌ＝北海道と単純には語れない面まで示されていたのは大変興味深い。
+
+北海道を訪れるならば必見の施設と言ってもよいと思う。</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>施設案内</h2><div class="rule"></div>
+    <dl>
+      <div class="row"><dt>住所</dt><dd>〒059-0902<br>北海道白老郡白老町若草町2丁目3-1</dd></div>
+      <div class="row"><dt>電話</dt><dd><a href="tel:0144823914">0144-82-3914</a></dd></div>
+      <div class="row"><dt>休館日</dt><dd>月曜、12月29日〜1月5日、2月28日〜3月9日<br><span class="small">月曜が祝日・休日の場合は翌日以降の平日に閉館。ただし4月28日、8月12日、9月16日、9月22日は開館。</span></dd></div>
+    </dl>
+
+    <div class="map">
+      <iframe title="国立アイヌ民族博物館の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=%E5%9B%BD%E7%AB%8B%E3%82%A2%E3%82%A4%E3%83%8C%E6%B0%91%E6%97%8F%E5%8D%9A%E7%89%A9%E9%A4%A8%20%E5%8C%97%E6%B5%B7%E9%81%93%E7%99%BD%E8%80%81%E9%83%A1%E7%99%BD%E8%80%81%E7%94%BA%E8%8B%A5%E8%8D%89%E7%94%BA2%E4%B8%81%E7%9B%AE3-1&output=embed&hl=ja"></iframe>
+    </div>
+    <div class="btns">
+      <a class="btn main" href="https://www.google.com/maps/search/?api=1&query=%E5%9B%BD%E7%AB%8B%E3%82%A2%E3%82%A4%E3%83%8C%E6%B0%91%E6%97%8F%E5%8D%9A%E7%89%A9%E9%A4%A8%20%E5%8C%97%E6%B5%B7%E9%81%93%E7%99%BD%E8%80%81%E9%83%A1%E7%99%BD%E8%80%81%E7%94%BA%E8%8B%A5%E8%8D%89%E7%94%BA2%E4%B8%81%E7%9B%AE3-1" target="_blank" rel="noopener">Googleマップで開く</a>
+    </div>
+    <div class="btns" style="margin-top:34px">
+      <a class="btn" href="https://nam.go.jp/" target="_blank" rel="noopener">公式サイトを見る</a>
+      <a class="btn" href="https://form.ainu-upopoy.jp/form/pub/ainu-upopoy/toiawase" target="_blank" rel="noopener">お問い合わせフォーム</a>
+    </div>
+    <div class="sns">
+      <a href="https://youtube.com/@upopoy" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/upopoy/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.88v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/ainumuseumpark/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">国立アイヌ民族博物館　〒059-0902 北海道白老郡白老町若草町2丁目3-1</div></footer>
+</body>
+</html>
